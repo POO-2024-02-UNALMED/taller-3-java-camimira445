@@ -10,39 +10,26 @@ public class Control {
 	}
 
     public void turnOn(){
-        if(tv != null){
-            this.tv.turnOn();
-        }
+        this.tv.turnOn();
     }
 
     public void turnOff(){
-        if(tv != null){
             this.tv.turnOff();
-        }
 
     }
     public void canalUp(){
-        if(tv != null){
             this.tv.canalUp();
-        }
 
     }
     public void canalDown(){
-        if(tv != null){
             this.tv.canalDown();
-        }
 
     }
     public void volumenUp(){
-        if (tv != null){
             this.tv.volumenUp();
         }
-
-    }
     public void volumenDown(){
-        if(tv != null){
             this.tv.volumenDown();
-        }
 
     }
     public void setCanal(int canal){
@@ -51,12 +38,13 @@ public class Control {
     public void setVolumen(int volumen){
         this.tv.setVolumen(volumen);
     }
+    public TV getTv(){
+        return tv;
+    }
 
     public void setTv(TV tv) {
 		this.tv = tv;
 	}
-    public TV getTv(){
-        return tv;
-    }
+    
     
 }
