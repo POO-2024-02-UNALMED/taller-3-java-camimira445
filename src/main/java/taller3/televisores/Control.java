@@ -1,5 +1,7 @@
 package taller3.televisores;
+
 public class Control {
+
     private TV tv;
 
     public void enlazar(TV tv) {
@@ -11,8 +13,8 @@ public class Control {
         if(tv != null){
             this.tv.turnOn();
         }
-
     }
+
     public void turnOff(){
         if(tv != null){
             this.tv.turnOff();
