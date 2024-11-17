@@ -71,14 +71,14 @@ public class TV {
     }
 
     public void setCanal(int canal){
-        if(this.estado=true && canal>=1 && canal<=120)
+        if(estado=true && canal>1 && canal<120)
         this.canal=canal;
     }
     public void setPrecio(int precio){
         this.precio=precio;
     }
     public void setVolumen(int volumen){
-        if(estado=true && volumen>=0 && volumen <=7)
+        if(estado=true && volumen>0 && volumen <7)
         this.volumen=volumen;
     }
     
