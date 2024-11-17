@@ -43,10 +43,10 @@ public class TV {
        this.setCanal(this.canal -1);
     }
     public void volumenUp(){
-        this.setVolumen(volumen +1);
+        this.setVolumen(this.volumen +1);
     }
     public void volumenDown(){
-        this.setVolumen(volumen -1);
+        this.setVolumen(this.volumen -1);
     }
 
     public Marca getMarca(){
@@ -73,15 +73,17 @@ public class TV {
     }
 
     public void setCanal(int canal){
-        if(this.estado && canal >=1 && canal<=120)
+        if(this.estado && canal >=1 && canal<=120){
         this.canal=canal;
+        }
     }
     public void setPrecio(int precio){
         this.precio=precio;
     }
     public void setVolumen(int volumen){
-        if(this.estado && canal>=0 && canal<=7)
+        if(this.estado && volumen>=0 && volumen<=7){
         this.volumen=volumen;
+        }
     }
     
     
