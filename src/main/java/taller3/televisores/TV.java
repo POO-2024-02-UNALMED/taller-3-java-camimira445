@@ -18,6 +18,7 @@ public class TV {
         canal=1;
         volumen=1;
         precio=500;
+
         TV.numTV ++;
     }
     public static int getNumTV(){
@@ -28,18 +29,18 @@ public class TV {
 
     }
     public void turnOn(){
-        estado=true;
+        this.estado=true;
     
     }
     public void turnOff(){
-        estado=false;
+        this.estado=false;
     }
     public void canalUp(){
       
-         this.setCanal(canal ++);
+         this.setCanal(this.canal ++);
     }
     public void canalDown(){
-       this.setCanal(canal --);
+       this.setCanal(this.canal --);
     }
     public void volumenUp(){
         this.setVolumen(volumen ++);
